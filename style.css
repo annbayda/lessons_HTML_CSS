@@ -9,15 +9,23 @@
 }
 
 .page-header-wrp {
-    display: flex;
     min-height: 75px;
     width: 100%;
-    background: #222222;
+    background: #222222;    
+}
+
+.page-header-wrp ul li{
+    list-style-type: non;
+    display: inline;
 }
 
 .logo {
-    margin-left: 265px;
+    margin-left: 231px;
     margin-top: 18px;
+}
+
+.search-form{
+    display: inline;
 }
 
 .search-btn-svg {
@@ -359,49 +367,56 @@
     font-family: 'Lato';
 }
 
-/*первая карточка*/
+.products{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 230px;
+    font-family: 'Lato';
+    margin-top: 65px;
+}
 
-.card-man-jacket {
+.products-item {
     width: 360px;
     background: #F8F8F8;
     margin-right: 30px;
     position: relative;
+    margin-bottom: 30px;
 }
 
-.card-man-jacket:hover .card-man-jacket-btn {
+.products-item:hover .products-item-btn {
     display: flex;
 }
 
-.card-man-jacket:hover .card-man-jacket-btn:hover {
+.products-item:hover .products-item-btn:hover {
     background-color: #ccc;
     color: #000;
 }
 
-.card-man-jacket:hover .card-man-jacket-btn:hover svg {
+.products-item:hover .products-item-btn:hover svg {
     fill: #000;
 }
 
-.card-man-jacket:hover .card-man-jacket-btn:active {
+.products-item:hover .products-item-btn:active {
     background-color: transparent;
     color: #fff;
     border: 1px solid #fff;
 }
 
-.card-man-jacket:hover .card-man-jacket-btn:active svg {
+.products-item:hover .products-item-btn:active svg {
     fill: #fff;
 }
 
-.card-man-jacket:hover .card-man-jacket-photo {
+.products-item:hover .products-item-photo {
     filter: brightness(50%);
 }
 
-.card-man-jacket-photo {
+.products-item-photo {
     display: block;
     width: 100%;
     margin: 0 auto;
 }
 
-.card-man-jacket-btn {
+.products-item-btn {
     display: none;
     justify-content: center;
     align-items: center;
@@ -420,358 +435,15 @@
     outline: none;
 }
 
-.card-man-jacket-btn svg {
-    fill: #fff;
-    margin: 0 11px 0 0;
-}
-
-.products-item-title {
-    text-transform: uppercase;
-}
-
-/* вторая карточка*/
-
-.card-woman-costume {
-    width: 360px;
-    background: #F8F8F8;
-    margin-right: 30px;
-    position: relative;
-}
-
-.card-woman-costume:hover .card-woman-costume-btn {
-    display: flex;
-}
-
-.card-woman-costume:hover .card-woman-costume-btn:hover {
-    background-color: #ccc;
-    color: #000;
-}
-
-.card-woman-costume:hover .card-woman-costume-btn:hover svg {
-    fill: #000;
-}
-
-.card-woman-costume:hover .card-woman-costume-btn:active {
-    background-color: transparent;
-    color: #fff;
-    border: 1px solid #fff;
-}
-
-.card-woman-costume:hover .card-woman-costume-btn:active svg {
-    fill: #fff;
-}
-
-.card-woman-costume:hover .card-woman-costume-photo {
-    filter: brightness(50%);
-}
-
-.card-woman-costume-photo {
-    display: block;
-    width: 100%;
-    margin: 0 auto;
-}
-
-.card-woman-costume-btn {
-    display: none;
-    justify-content: center;
-    align-items: center;
-    width: 38.3%;
-    min-height: 43px;
-    border: 1px solid #FFFFFF;
-    background: transparent;
-    text-align: center;
-    font-size: 14px;
-    line-height: 17px;
-    color: #FFFFFF;
-    position: absolute;
-    top: 188px;
-    left: 32.7%;
-    padding: 0;
-    outline: none;
-}
-
-.card-woman-costume-btn svg {
-    fill: #fff;
-    margin: 0 11px 0 0;
-}
-
-/*третья карточка*/
-
-.card-man-hat {
-    width: 360px;
-    background: #F8F8F8;
-    margin-right: 30px;
-    position: relative;
-}
-
-.card-man-hat:hover .card-man-hat-btn {
-    display: flex;
-}
-
-.card-man-hat:hover .card-man-hat-btn:hover {
-    background-color: #ccc;
-    color: #000;
-}
-
-.card-man-hat:hover .card-man-hat-btn:hover svg {
-    fill: #000;
-}
-
-.card-man-hat:hover .card-man-hat-btn:active {
-    background-color: transparent;
-    color: #fff;
-    border: 1px solid #fff;
-}
-
-.card-man-hat:hover .card-man-hat-btn:active svg {
-    fill: #fff;
-}
-
-.card-man-hat:hover .card-man-hat-photo {
-    filter: brightness(50%);
-}
-
-.card-man-hat-photo {
-    display: block;
-    width: 100%;
-    margin: 0 auto;
-}
-
-.card-man-hat-btn {
-    display: none;
-    justify-content: center;
-    align-items: center;
-    width: 38.3%;
-    min-height: 43px;
-    border: 1px solid #FFFFFF;
-    background: transparent;
-    text-align: center;
-    font-size: 14px;
-    line-height: 17px;
-    color: #FFFFFF;
-    position: absolute;
-    top: 188px;
-    left: 32.7%;
-    padding: 0;
-    outline: none;
-}
-
-.card-man-hat-btn svg {
-    fill: #fff;
-    margin: 0 11px 0 0;
-}
-
-
-/*четвертая карточка*/
-
-
-.card-man-pants {
-    background: #F8F8F8;
-    width: 360px;
-    margin-right: 30px;
-    position: relative;
-}
-
-.card-man-pants:hover .card-man-pants-btn {
-    display: flex;
-}
-
-.card-man-pants:hover .card-man-pants-btn:hover {
-    background-color: #ccc;
-    color: #000;
-}
-
-.card-man-pants:hover .card-man-pants-btn:hover svg {
-    fill: #000;
-}
-
-.card-man-pants:hover .card-man-pants-btn:active {
-    background-color: transparent;
-    color: #fff;
-    border: 1px solid #fff;
-}
-
-.card-man-pants:hover .card-man-pants-btn:active svg {
-    fill: #fff;
-}
-
-.card-man-pants:hover .card-man-pants-photo {
-    filter: brightness(50%);
-}
-
-.card-man-pants-photo {
-    display: block;
-    width: 100%;
-    margin: 0 auto;
-}
-
-.card-man-pants-btn {
-    display: none;
-    justify-content: center;
-    align-items: center;
-    width: 38.3%;
-    min-height: 43px;
-    border: 1px solid #FFFFFF;
-    background: transparent;
-    text-align: center;
-    font-size: 14px;
-    line-height: 17px;
-    color: #FFFFFF;
-    position: absolute;
-    top: 188px;
-    left: 32.7%;
-    padding: 0;
-    outline: none;
-}
-
-.card-man-pants-btn svg {
-    fill: #fff;
-    margin: 0 11px 0 0;
-}
-
-/*пятая карточка*/
-
-.card-woman-jacket {
-    width: 360px;
-    background: #F8F8F8;
-    margin-right: 30px;
-    position: relative;
-}
-
-.card-woman-jacket:hover .card-woman-jacket-btn {
-    display: flex;
-}
-
-.card-woman-jacket:hover .card-woman-jacket-btn:hover {
-    background-color: #ccc;
-    color: #000;
-}
-
-.card-woman-jacket:hover .card-woman-jacket-btn:hover svg {
-    fill: #000;
-}
-
-.card-woman-jacket:hover .card-woman-jacket-btn:active {
-    background-color: transparent;
-    color: #fff;
-    border: 1px solid #fff;
-}
-
-.card-woman-jacket:hover .card-woman-jacket-btn:active svg {
-    fill: #fff;
-}
-
-.card-woman-jacket:hover .card-woman-jacket-photo {
-    filter: brightness(50%);
-}
-
-.card-woman-jacket-photo {
-    display: block;
-    width: 100%;
-    margin: 0 auto;
-}
-
-.card-woman-jacket-btn {
-    display: none;
-    justify-content: center;
-    align-items: center;
-    width: 38.3%;
-    min-height: 43px;
-    border: 1px solid #FFFFFF;
-    background: transparent;
-    text-align: center;
-    font-size: 14px;
-    line-height: 17px;
-    color: #FFFFFF;
-    position: absolute;
-    top: 188px;
-    left: 32.7%;
-    padding: 0;
-    outline: none;
-}
-
-.card-woman-jacket-btn svg {
-    fill: #fff;
-    margin: 0 11px 0 0;
-}
-
-/*шестая карточка*/
-
-.card-woman-band {
-    width: 360px;
-    background: #F8F8F8;
-    margin-right: 30px;
-    position: relative;
-}
-
-.card-woman-band:hover .card-woman-band-btn {
-    display: flex;
-}
-
-.card-woman-band:hover .card-woman-band-btn:hover {
-    background-color: #ccc;
-    color: #000;
-}
-
-.card-woman-band:hover .card-woman-band-btn:hover svg {
-    fill: #000;
-}
-
-.card-woman-band:hover .card-woman-band-btn:active {
-    background-color: transparent;
-    color: #fff;
-    border: 1px solid #fff;
-}
-
-.card-woman-band:hover .card-woman-band-btn:active svg {
-    fill: #fff;
-}
-
-.card-woman-band:hover .card-woman-band-photo {
-    filter: brightness(50%);
-}
-
-.card-woman-band-photo {
-    display: block;
-    width: 100%;
-    margin: 0 auto;
-}
-
-.card-woman-band-btn {
-    display: none;
-    justify-content: center;
-    align-items: center;
-    width: 38.3%;
-    min-height: 43px;
-    border: 1px solid #FFFFFF;
-    background: transparent;
-    text-align: center;
-    font-size: 14px;
-    line-height: 17px;
-    color: #FFFFFF;
-    position: absolute;
-    top: 188px;
-    left: 32.7%;
-    padding: 0;
-    outline: none;
-}
-
-.card-woman-band-btn svg {
-    fill: #fff;
-    margin: 0 11px 0 0;
-}
-
-/*окончание карточек*/
-
-.content-woman-jacket,
-.content-man-pants,
-.content-man-jacket,
-.content-woman-costume,
-.content-man-hat,
-.content-woman-band {
+.products-item-content{
     padding-top: 24.35px;
     padding-left: 18px;
     padding-bottom: 20px;
+}
+
+.products-item-btn svg {
+    fill: #fff;
+    margin: 0 11px 0 0;
 }
 
 .products-item-title {
@@ -781,14 +453,10 @@
     line-height: 16px;
     color: #000000;
     margin-bottom: 12.65px;
+    text-transform: uppercase;
 }
 
-.text-man-jacket,
-.text-woman-costume,
-.text-man-hat,
-.text-man-pants,
-.text-woman-jacket,
-.text-woman-band {
+.products-item-txt{
     font-style: normal;
     font-weight: 300;
     font-size: 14px;
@@ -796,12 +464,7 @@
     color: #5D5D5D;
 }
 
-.prise-man-jacket,
-.prise-woman-costume,
-.prise-man-hat,
-.prise-man-pants,
-.prise-woman-jacket,
-.prise-woman-band {
+.products-item-prise {
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -815,8 +478,8 @@
     width: 214px;
     border: 1px solid #FF6A6A;
     background-color: #ffffff;
-    margin-left: 695.5px;
-    margin-top: 48.5px;
+    margin-left: 695px;
+    margin-top: 18px;
     padding: 0;
     outline: none;
 }
