@@ -489,7 +489,7 @@
     outline: none;
 }
 
-.button-subscribe {
+.subscribe-btn {
     height: 49px;
     width: 102px;
     border-bottom-right-radius: 15px;
@@ -506,7 +506,7 @@
     box-shadow: 0 1px 1px 0px rgba(33, 33, 33, 0.35);
 }
 
-.button-subscribe-text {
+.subscribe-text-btn {
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
