@@ -91,7 +91,7 @@ input:focus-visible {
 }
 
 .page-header-search-form:hover svg {
-    fill: orange;
+    fill: red;
 }
 
 .page-header-search-btn {
@@ -136,13 +136,13 @@ input:focus-visible {
 .menu-btn:hover span,
 .menu-btn:hover span::before,
 .menu-btn:hover span::after {
-    background-color: orange;
+    background-color: red;
 }
 
 .menu-btn:active span,
 .menu-btn:active span::before,
 .menu-btn:active span::after {
-    background-color: red;
+    background-color: green;
 }
 
 .menu-btn span {
@@ -371,6 +371,10 @@ input:focus-visible {
     font-weight: 700;
     font-size: 32px;
     line-height: 38.4px;
+}
+
+.page-header-banner-subtitle span {
+    color: #F16D7F;
 }
 
 .categories {
@@ -724,7 +728,7 @@ input:focus-visible {
 }
 
 .su .subscribe-form-wrp {
-    width: 355px;
+    min-width: 355px;
 }
 
 .subscribe-form-title,
@@ -756,6 +760,7 @@ input:focus-visible {
     justify-content: center;
     align-items: center;
     width: 356px;
+    margin-top: 27px;
 }
 
 .subscribe-form-email {
@@ -947,21 +952,44 @@ input:focus-visible {
     }
 
     .products-btn {
-        margin-left: 278px;
+        margin:0 auto;
+        margin-top: 48px;
+    }
+
+    .block-information {
+        display: block;
+        padding: 48px 204px 64px 204px;
+    }
+
+    .features-item-icon {
+        margin-left: 0;
+        margin-top: 48px;
+    }
+
+    .features-item {
+        margin: 0;
     }
 
     .features {
-        margin: 64.5px auto 0 auto;
+        margin-top: 64.5px;
         display: block;
-        padding-left: 230px;
+        padding: 48px 204px 64px 244px;
     }
 
     .review-subscribe {
         display: block;
+        padding: 0;
+        min-height: 693px;
+        background-size: cover;
+        background-position: 15% 50%;
+    }
+
+    .subscribe {
+        margin-top: 53px;
+        padding-top: 0;
     }
 
     .review {
-        padding-top: 53px;
         padding-left: 204px;
     }
 
@@ -969,4 +997,118 @@ input:focus-visible {
         margin-left: 209px;
     }
 
+    .subscribe-form-wrp {
+        margin-bottom: 219px;
+        margin-top: 48px;
+    }
+}
+
+@media (max-width: 480px) {
+    .account-btn svg {
+        display: none;
+    }
+
+    .cart-btn svg {
+        display: none;
+    }
+
+    .menu-btn {
+        margin-left: 140px;
+    }
+
+    .page-header-banner {
+        background-image: none;
+        padding-left: 71px;
+        padding-right: 0;
+    }
+
+    .page-header-banner-title {
+        font-size: 38px;
+        line-height: 46px;
+    }
+
+    .page-header-banner-subtitle {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .categories {
+        display: block;
+        padding: 64px 0 64px 0;
+        margin: 0;
+        justify-content: center;
+        align-items: center;
+        display: grid;
+    }
+
+    .categories-item {
+        width: 100%;
+        margin: 0 0 32px 0;
+        max-width: 343px;
+        min-height: 247px;
+    }
+    
+    .categories-item:nth-child(4n-1) {
+        margin: 0 0 32px;
+    }
+
+    .categories-item:last-child {
+        min-height: 111px;
+        width: 448px;
+        margin-top: 0px;
+    }
+
+    .products-item {
+        width: 464px;
+        margin: 0;
+    }
+
+    .products-txt {
+        margin-bottom: 65px;
+    }
+
+    .products {
+        margin: 0;
+        padding: 0 8px 0 8px;
+    }
+
+    .products-item:nth-child(even) {
+        margin: 16px 0 16px 0;
+    }
+
+    .products-item:nth-child(3n-1) {
+        margin: 16px 0 0 0;
+    }
+
+    .products-btn {
+        margin-top: 41px;
+    }
+
+    .features {
+        margin-top: 96px;
+        padding: 0;
+        display: grid;
+        padding-bottom: 81px;
+    }
+
+    .review-subscribe {
+        min-height: 550px;
+        display: grid;
+        background-position: 25%;
+    }
+
+    .review {
+        padding: 54px 0 0 0;
+        margin: 0;
+    }
+
+    .subscribe-form-wrp {
+        margin-top: 59px;
+        margin-bottom: 0;
+    }
+
+    .subscribe-form {
+        margin: 0;
+        margin-bottom: 109px;
+    }
 }
